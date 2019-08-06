@@ -14,6 +14,11 @@
 		042B707022F919E000DCBD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042B706E22F919E000DCBD8C /* LaunchScreen.storyboard */; };
 		042B707322F919E000DCBD8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B707222F919E000DCBD8C /* main.m */; };
 		042B707C22F91F8C00DCBD8C /* NSString+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B707B22F91F8C00DCBD8C /* NSString+Tool.m */; };
+		042B707F22F970EC00DCBD8C /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B707E22F970EC00DCBD8C /* UIImage+Tool.m */; };
+		042B708222F9715200DCBD8C /* UIButton+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B708122F9715200DCBD8C /* UIButton+Tool.m */; };
+		042B708522F9738600DCBD8C /* UIColor+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B708422F9738600DCBD8C /* UIColor+Tool.m */; };
+		042B708B22F974AF00DCBD8C /* UIFont+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B708A22F974AF00DCBD8C /* UIFont+Tool.m */; };
+		042B708E22F9752C00DCBD8C /* UIBarButtonItem+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B708D22F9752C00DCBD8C /* UIBarButtonItem+Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,17 @@
 		042B707222F919E000DCBD8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		042B707A22F91F8C00DCBD8C /* NSString+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tool.h"; sourceTree = "<group>"; };
 		042B707B22F91F8C00DCBD8C /* NSString+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tool.m"; sourceTree = "<group>"; };
+		042B707D22F970EC00DCBD8C /* UIImage+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tool.h"; sourceTree = "<group>"; };
+		042B707E22F970EC00DCBD8C /* UIImage+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tool.m"; sourceTree = "<group>"; };
+		042B708022F9715200DCBD8C /* UIButton+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Tool.h"; sourceTree = "<group>"; };
+		042B708122F9715200DCBD8C /* UIButton+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Tool.m"; sourceTree = "<group>"; };
+		042B708322F9738600DCBD8C /* UIColor+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tool.h"; sourceTree = "<group>"; };
+		042B708422F9738600DCBD8C /* UIColor+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tool.m"; sourceTree = "<group>"; };
+		042B708922F974AF00DCBD8C /* UIFont+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+Tool.h"; sourceTree = "<group>"; };
+		042B708A22F974AF00DCBD8C /* UIFont+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Tool.m"; sourceTree = "<group>"; };
+		042B708C22F9752C00DCBD8C /* UIBarButtonItem+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Tool.h"; sourceTree = "<group>"; };
+		042B708D22F9752C00DCBD8C /* UIBarButtonItem+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Tool.m"; sourceTree = "<group>"; };
+		042B708F22F9763900DCBD8C /* BaseComHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseComHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +94,19 @@
 		042B707922F91CC800DCBD8C /* BaseCom */ = {
 			isa = PBXGroup;
 			children = (
+				042B707D22F970EC00DCBD8C /* UIImage+Tool.h */,
+				042B707E22F970EC00DCBD8C /* UIImage+Tool.m */,
 				042B707A22F91F8C00DCBD8C /* NSString+Tool.h */,
 				042B707B22F91F8C00DCBD8C /* NSString+Tool.m */,
+				042B708022F9715200DCBD8C /* UIButton+Tool.h */,
+				042B708122F9715200DCBD8C /* UIButton+Tool.m */,
+				042B708322F9738600DCBD8C /* UIColor+Tool.h */,
+				042B708422F9738600DCBD8C /* UIColor+Tool.m */,
+				042B708922F974AF00DCBD8C /* UIFont+Tool.h */,
+				042B708A22F974AF00DCBD8C /* UIFont+Tool.m */,
+				042B708C22F9752C00DCBD8C /* UIBarButtonItem+Tool.h */,
+				042B708D22F9752C00DCBD8C /* UIBarButtonItem+Tool.m */,
+				042B708F22F9763900DCBD8C /* BaseComHeader.h */,
 			);
 			path = BaseCom;
 			sourceTree = "<group>";
@@ -155,9 +182,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				042B706822F919E000DCBD8C /* ViewController.m in Sources */,
+				042B708222F9715200DCBD8C /* UIButton+Tool.m in Sources */,
 				042B707322F919E000DCBD8C /* main.m in Sources */,
+				042B707F22F970EC00DCBD8C /* UIImage+Tool.m in Sources */,
 				042B706522F919E000DCBD8C /* AppDelegate.m in Sources */,
 				042B707C22F91F8C00DCBD8C /* NSString+Tool.m in Sources */,
+				042B708B22F974AF00DCBD8C /* UIFont+Tool.m in Sources */,
+				042B708E22F9752C00DCBD8C /* UIBarButtonItem+Tool.m in Sources */,
+				042B708522F9738600DCBD8C /* UIColor+Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
