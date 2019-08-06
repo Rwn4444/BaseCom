@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "BaseCom"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of BaseCom."
+  spec.summary      = "BaseCom."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+                   This is BaseCom
                    DESC
 
   spec.homepage     = "https://github.com/Rwn4444/BaseCom"
@@ -90,8 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  =  "BaseCom/BaseCom/**/*.{h,m}"
+  #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 

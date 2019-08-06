@@ -13,6 +13,7 @@
 		042B706D22F919E000DCBD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042B706C22F919E000DCBD8C /* Assets.xcassets */; };
 		042B707022F919E000DCBD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042B706E22F919E000DCBD8C /* LaunchScreen.storyboard */; };
 		042B707322F919E000DCBD8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B707222F919E000DCBD8C /* main.m */; };
+		042B707C22F91F8C00DCBD8C /* NSString+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B707B22F91F8C00DCBD8C /* NSString+Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		042B706F22F919E000DCBD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042B707122F919E000DCBD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042B707222F919E000DCBD8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		042B707A22F91F8C00DCBD8C /* NSString+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tool.h"; sourceTree = "<group>"; };
+		042B707B22F91F8C00DCBD8C /* NSString+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		042B706222F919E000DCBD8C /* BaseCom */ = {
 			isa = PBXGroup;
 			children = (
+				042B707922F91CC800DCBD8C /* BaseCom */,
 				042B706322F919E000DCBD8C /* AppDelegate.h */,
 				042B706422F919E000DCBD8C /* AppDelegate.m */,
 				042B706622F919E000DCBD8C /* ViewController.h */,
@@ -67,6 +71,15 @@
 				042B706E22F919E000DCBD8C /* LaunchScreen.storyboard */,
 				042B707122F919E000DCBD8C /* Info.plist */,
 				042B707222F919E000DCBD8C /* main.m */,
+			);
+			path = BaseCom;
+			sourceTree = "<group>";
+		};
+		042B707922F91CC800DCBD8C /* BaseCom */ = {
+			isa = PBXGroup;
+			children = (
+				042B707A22F91F8C00DCBD8C /* NSString+Tool.h */,
+				042B707B22F91F8C00DCBD8C /* NSString+Tool.m */,
 			);
 			path = BaseCom;
 			sourceTree = "<group>";
@@ -144,6 +157,7 @@
 				042B706822F919E000DCBD8C /* ViewController.m in Sources */,
 				042B707322F919E000DCBD8C /* main.m in Sources */,
 				042B706522F919E000DCBD8C /* AppDelegate.m in Sources */,
+				042B707C22F91F8C00DCBD8C /* NSString+Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
