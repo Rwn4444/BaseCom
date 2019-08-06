@@ -152,7 +152,7 @@
 
 
 //emoji去除
-- (NSString *)disable_emoji:(NSString *)text
++ (NSString *)disable_emoji:(NSString *)text
 {
     
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[^\\u0020-\\u007E\\u00A0-\\u00BE\\u2E80-\\uA4CF\\uF900-\\uFAFF\\uFE30-\\uFE4F\\uFF00-\\uFFEF\\u0080-\\u009F\\u2000-\\u201f\r\n]" options:NSRegularExpressionCaseInsensitive error:nil];
@@ -304,7 +304,7 @@
     if (!value) {
         return NO;
     }else {
-        length = value.length;
+        length =  (int)value.length;
         if (length !=15 && length !=18) {
             return NO;
         }
