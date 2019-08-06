@@ -10,7 +10,7 @@
 
 @implementation UIButton (Tool)
 
-- (void)layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyle)style
+- (void)layoutButtonWithEdgeInsetsStyle:(RWNButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space
 {
     
@@ -29,7 +29,7 @@
     UIEdgeInsets imageEdgeInsets = UIEdgeInsetsZero;
     UIEdgeInsets labelEdgeInsets = UIEdgeInsetsZero;
     switch (style) {
-        case MKButtonEdgeInsetsStyleTop:
+        case RWNButtonEdgeInsetsStyleTop:
         {
             imageEdgeInsets = UIEdgeInsetsMake(-labelHeight-space/2.0, 0, 0, -labelWidth);
             labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith, -imageHeight-space/2.0, 0);
@@ -37,19 +37,19 @@
             
         }
             break;
-        case MKButtonEdgeInsetsStyleLeft:
+        case RWNButtonEdgeInsetsStyleLeft:
         {
             imageEdgeInsets = UIEdgeInsetsMake(0, -space/2.0, 0, space/2.0);
             labelEdgeInsets = UIEdgeInsetsMake(0, space/2.0, 0, -space/2.0);
         }
             break;
-        case MKButtonEdgeInsetsStyleBottom:
+        case RWNButtonEdgeInsetsStyleBottom:
         {
             imageEdgeInsets = UIEdgeInsetsMake(0, 0, -labelHeight-space/2.0, -labelWidth);
             labelEdgeInsets = UIEdgeInsetsMake(-imageHeight-space/2.0, -imageWith, 0, 0);
         }
             break;
-        case MKButtonEdgeInsetsStyleRight:
+        case RWNButtonEdgeInsetsStyleRight:
         {
             imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth+space/2.0, 0, -labelWidth-space/2.0);
             labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith-space/2.0, 0, imageWith+space/2.0);

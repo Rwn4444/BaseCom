@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, MKButtonEdgeInsetsStyle) {
-    MKButtonEdgeInsetsStyleTop, // image在上，label在下
-    MKButtonEdgeInsetsStyleLeft, // image在左，label在右
-    MKButtonEdgeInsetsStyleBottom, // image在下，label在上
-    MKButtonEdgeInsetsStyleRight // image在右，label在左
+typedef NS_ENUM(NSUInteger, RWNButtonEdgeInsetsStyle) {
+    RWNButtonEdgeInsetsStyleTop, // image在上，label在下
+    RWNButtonEdgeInsetsStyleLeft, // image在左，label在右
+    RWNButtonEdgeInsetsStyleBottom, // image在下，label在上
+    RWNButtonEdgeInsetsStyleRight // image在右，label在左
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param style titleLabel和imageView的布局样式
  *  @param space titleLabel和imageView的间距
  */
-- (void)layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyle)style
+- (void)layoutButtonWithEdgeInsetsStyle:(RWNButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space;
 
 @end
