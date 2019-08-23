@@ -13,7 +13,7 @@
 //16进制颜色(html颜色值)字符串转为UIColor
 +(UIColor *)RWNHexStringToColor: (NSString *) stringToConvert
 {
-    return [UIColor hexStringToColor:stringToConvert andAlph:1];
+    return [UIColor RWNHexStringToColor:stringToConvert andAlph:1];
 }
 
 //16进制颜色(html颜色值)字符串转为UIColor
