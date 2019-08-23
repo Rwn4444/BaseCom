@@ -14,30 +14,30 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark ---- 实例方法 ----
 ///md5加密
-- (NSString *)md5;
+- (NSString *)RWNMd5;
 ///通过时间格式转换时间
--(NSString *)RwnTimeExchangeWithDateFormat:(NSString *)dateFormat;
+-(NSString *)RWNTimeExchangeWithDateFormat:(NSString *)dateFormat;
 
 
 #pragma mark ---- 类方法 ----
 ///获取当前时间
-+(NSString *)RwnTimeNowWithDateFormat:(NSString *)dateFormat;
++(NSString *)RWNTimeNowWithDateFormat:(NSString *)dateFormat;
 ///获取当前时间戳
 +(long long)RWNGetNowTimeInterval;
 ///计算时间间隔
-+(NSString *)timeIntervalToNow:(long long)date;
++(NSString *)RWNTimeIntervalToNow:(long long)date;
 ///检查字符串是否为空
-+ (BOOL)checkForNull:(NSString *)checkString;
++ (BOOL)RWNCheckForNull:(NSString *)checkString;
 ///转换时间
-+(NSString*)changeToTimeWithCount:(NSInteger)count;
++(NSString*)RWNChangeToTimeWithCount:(NSInteger)count;
 ///获取随机字符串
-+(NSString *)getRandomStr;
++(NSString *)RWNGetRandomStr;
 ///是否包含中文
-+ (BOOL)hasChinese:(NSString *)str;
++ (BOOL)RWNHasChinese:(NSString *)str;
 ///身份证校验
-+ (BOOL)validateIDCardNumber:(NSString *)value;
++ (BOOL)RWNValidateIDCardNumber:(NSString *)value;
 ///emoji去除
-+(NSString *)disable_emoji:(NSString *)text;
++(NSString *)RWNDisable_emoji:(NSString *)text;
 /*
  声明：包含大写/小写/数字/特殊字符
  两种以下密码强度低
@@ -46,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
  密码强度标准根据需要随时调整
  */
 //判断是否包含
-+ (NSString*) judgePasswordStrength:(NSString*) _password;
++ (NSString*)RWNJudgePasswordStrength:(NSString*) _password;
 
 
 @end

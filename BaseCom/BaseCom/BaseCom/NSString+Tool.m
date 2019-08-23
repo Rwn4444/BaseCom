@@ -13,7 +13,7 @@
 
 @implementation NSString (Tool)
 
-- (NSString *)md5
+- (NSString *)RWNMd5
 {
     const char *cStr = [self UTF8String];
     unsigned char result[16];
@@ -27,7 +27,7 @@
             ];
 }
 
--(NSString *)RwnTimeExchangeWithDateFormat:(NSString *)dateFormat{
+-(NSString *)RWNTimeExchangeWithDateFormat:(NSString *)dateFormat{
     
     ///yyyy-MM-dd HH:mm:ss
     NSDate *sendDate = [NSDate dateWithTimeIntervalSince1970:[self longLongValue]/1000];
@@ -38,7 +38,7 @@
     
 }
 
-+(NSString *)RwnTimeNowWithDateFormat:(NSString *)dateFormat{
++(NSString *)RWNTimeNowWithDateFormat:(NSString *)dateFormat{
     
     NSDate *data=[NSDate date];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -64,15 +64,7 @@
 }
 
 
-+ (BOOL)checkForNull:(NSString *)checkString {
-    
-    if (checkString == NULL||[checkString isKindOfClass:[NSNull class]]||[checkString isEqualToString:@"null"]||[checkString isEqualToString:@"(null)"]||checkString == nil||[checkString isEqualToString:@"<null>"]||[checkString isEqualToString:@""]||([checkString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length == 0)) {
-        return YES;
-    }else {
-        return NO;
-    }
-    
-}
+
 
 
 /**
@@ -82,7 +74,7 @@
  *
  *  @return 时间间隔
  */
-+(NSString *)timeIntervalToNow:(long long)date
++(NSString *)RWNTimeIntervalToNow:(long long)date
 {
     NSDate *now=[NSDate date];
     NSNumber *time=[NSNumber numberWithLongLong:[now timeIntervalSince1970]*1000];
@@ -123,6 +115,17 @@
 }
 
 
++ (BOOL)RWNCheckForNull:(NSString *)checkString {
+    
+    if (checkString == NULL||[checkString isKindOfClass:[NSNull class]]||[checkString isEqualToString:@"null"]||[checkString isEqualToString:@"(null)"]||checkString == nil||[checkString isEqualToString:@"<null>"]||[checkString isEqualToString:@""]||([checkString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length == 0)) {
+        return YES;
+    }else {
+        return NO;
+    }
+    
+}
+
+
 /**
  倒计时功能
  
@@ -130,7 +133,7 @@
  @param allTime 总时间
  @return return value description
  */
-+(NSString *)DaoJiShi:(long long)date  andJiShiTime:(long long)allTime
++(NSString *)RWNDaoJiShi:(long long)date  andJiShiTime:(long long)allTime
 {
     ///1523933304310
     ///1523931129000
@@ -141,7 +144,7 @@
     long long   myTime= allTime  - (nowTime-date)/1000;
     NSString *returnTime = @"";
     if (myTime>=0) {
-        returnTime = [NSString changeToTimeWithCount:myTime];
+        returnTime = [NSString RWNChangeToTimeWithCount:myTime];
     }else{
         returnTime = @"00:00";
     }
@@ -152,7 +155,7 @@
 
 
 //emoji去除
-+ (NSString *)disable_emoji:(NSString *)text
++ (NSString *)RWNDisable_emoji:(NSString *)text
 {
     
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[^\\u0020-\\u007E\\u00A0-\\u00BE\\u2E80-\\uA4CF\\uF900-\\uFAFF\\uFE30-\\uFE4F\\uFF00-\\uFFEF\\u0080-\\u009F\\u2000-\\u201f\r\n]" options:NSRegularExpressionCaseInsensitive error:nil];
@@ -167,7 +170,7 @@
 
 
 
-+(NSString*)changeToTimeWithCount:(NSInteger)count{
++(NSString*)RWNChangeToTimeWithCount:(NSInteger)count{
     
     NSString *currentTime=@"00:00";
     
@@ -232,7 +235,7 @@
     return result;
 }
 
-+ (NSString*) judgePasswordStrength:(NSString*) _password
++ (NSString*)RWNJudgePasswordStrength:(NSString*) _password
 {
     NSMutableArray* resultArray = [[NSMutableArray alloc] init];
     
@@ -273,7 +276,7 @@
     return resultString;
 }
 
-+(NSString *)getRandomStr
++(NSString *)RWNGetRandomStr
 {
     char data[32];
     for (int x=0;x < 32;data[x++] = (char)('A' + (arc4random_uniform(26))));
@@ -285,7 +288,7 @@
 }
 
 ///是否包含中文
-+ (BOOL)hasChinese:(NSString *)str {
++ (BOOL)RWNHasChinese:(NSString *)str {
     for(int i=0; i< [str length];i++){
         int a = [str characterAtIndex:i];
         if( a > 0x4e00 && a < 0x9fff)
@@ -297,7 +300,7 @@
 }
 
 ///身份证校验
-+ (BOOL)validateIDCardNumber:(NSString *)value {
++ (BOOL)RWNValidateIDCardNumber:(NSString *)value {
     value = [value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     int length =0;

@@ -15,7 +15,7 @@
 
 
 //改变图片颜色
-+ (UIImage *)imageWithColor:(UIColor *)color {
++ (UIImage *)RWNImageWithColor:(UIColor *)color {
     
     return [self imageWithColor:color size:CGSizeMake(1, 1)];
     
@@ -40,7 +40,7 @@
  *
  *  @return UIImage
  */
-- (UIImage *)changeImageWithColor:(UIColor *)color
+- (UIImage *)RWNChangeImageWithColor:(UIColor *)color
 {
     UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -58,7 +58,7 @@
 
 
 
-- (UIImage *)changeAlphaOfImageWith:(CGFloat)alpha withImage:(UIImage*)image
+- (UIImage *)RWNChangeAlphaOfImageWith:(CGFloat)alpha withImage:(UIImage*)image
 {
     UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0f);
     
@@ -84,7 +84,7 @@
 
 
 
-+ (UIImage *)stretchableImageWithImageName:(NSString *)imageName{
++ (UIImage *)RWNStretchableImageWithImageName:(NSString *)imageName{
     
     // 加载图片
     UIImage *image = [UIImage imageNamed:imageName];
@@ -100,7 +100,7 @@
 }
 
 
--(UIImage*)scaleToSize:(CGSize)size
+-(UIImage*)RWNScaleToSize:(CGSize)size
 {
     // 创建一个bitmap的context
     // 并把它设置成为当前正在使用的context
@@ -115,7 +115,7 @@
     return scaledImage;
 }
 
-+ (UIImage *)gradientColorImageFromColors:(NSArray*)colors gradientType:(GradientType)gradientType imgSize:(CGSize)imgSize {
++ (UIImage *)RWNGradientColorImageFromColors:(NSArray*)colors gradientType:(GradientType)gradientType imgSize:(CGSize)imgSize {
     NSMutableArray *ar = [NSMutableArray array];
     for(UIColor *c in colors) {
         [ar addObject:(id)c.CGColor];
@@ -156,7 +156,7 @@
     return image;
 }
 
--(UIImage *)changeGrayImage:(UIImage *)oldImage
+-(UIImage *)RWNChangeGrayImage:(UIImage *)oldImage
 {
     
     int bitmapInfo = kCGImageAlphaNone;
@@ -181,7 +181,7 @@
     return grayImage;
 }
 
-+(UIImage *)getVideoImage:(NSURL *)url{
++(UIImage *)RWNGetVideoImage:(NSURL *)url{
     
     NSDictionary *options = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:NO] forKey:AVURLAssetPreferPreciseDurationAndTimingKey];
     AVURLAsset *urlAsset = [[AVURLAsset alloc] initWithURL:url options:options];
@@ -195,7 +195,7 @@
 }
 
 
--(UIImage*)rotateImageWithDegree:(CGFloat)degree{
+-(UIImage*)RWNRotateImageWithDegree:(CGFloat)degree{
         
         //将image转化成context
         //获取图片像素的宽和高
@@ -236,13 +236,13 @@
         return  rotateImage;
     }
 
-+ (UIImage *)getRotationImage:(UIImage *)image rotation:(CGFloat)rotation {
++ (UIImage *)RWNGetRotationImage:(UIImage *)image rotation:(CGFloat)rotation {
     
     CIImage *ciImage = [[CIImage alloc] initWithImage:image];
     CIFilter *filter = [CIFilter filterWithName:@"CIAffineTransform" keysAndValues:kCIInputImageKey, ciImage, nil];
     
     [filter setDefaults];
-    CGAffineTransform transform = CATransform3DGetAffineTransform([self rotateTransform:CATransform3DIdentity clockwise:NO angle:rotation]);
+    CGAffineTransform transform = CATransform3DGetAffineTransform([self RWNRotateTransform:CATransform3DIdentity clockwise:NO angle:rotation]);
     [filter setValue:[NSValue valueWithBytes:&transform objCType:@encode(CGAffineTransform)] forKey:@"inputTransform"];
     
     //根据滤镜设置图片
@@ -257,7 +257,7 @@
     return result;
 }
 
-+ (CATransform3D)rotateTransform:(CATransform3D)initialTransform clockwise:(BOOL)clockwise angle:(CGFloat)angle {
++ (CATransform3D)RWNRotateTransform:(CATransform3D)initialTransform clockwise:(BOOL)clockwise angle:(CGFloat)angle {
     
     CGFloat arg = angle*M_PI / 180.0f;
     if(!clockwise){

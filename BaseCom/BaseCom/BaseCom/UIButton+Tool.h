@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param style titleLabel和imageView的布局样式
  *  @param space titleLabel和imageView的间距
  */
-- (void)layoutButtonWithEdgeInsetsStyle:(RWNButtonEdgeInsetsStyle)style
+- (void)RWNLayoutButtonWithEdgeInsetsStyle:(RWNButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space;
 
 @end

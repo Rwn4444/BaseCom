@@ -11,13 +11,13 @@
 @implementation UIColor (Tool)
 
 //16进制颜色(html颜色值)字符串转为UIColor
-+(UIColor *) hexStringToColor: (NSString *) stringToConvert
++(UIColor *)RWNHexStringToColor: (NSString *) stringToConvert
 {
     return [UIColor hexStringToColor:stringToConvert andAlph:1];
 }
 
 //16进制颜色(html颜色值)字符串转为UIColor
-+(UIColor *) hexStringToColor: (NSString *) stringToConvert andAlph:(CGFloat)alpha
++(UIColor *)RWNHexStringToColor: (NSString *) stringToConvert andAlph:(CGFloat)alpha
 {
     NSString *cString = [[stringToConvert stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     // String should be 6 or 8 characters

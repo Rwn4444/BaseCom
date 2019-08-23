@@ -19,6 +19,7 @@
 		042B708522F9738600DCBD8C /* UIColor+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B708422F9738600DCBD8C /* UIColor+Tool.m */; };
 		042B708B22F974AF00DCBD8C /* UIFont+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B708A22F974AF00DCBD8C /* UIFont+Tool.m */; };
 		042B708E22F9752C00DCBD8C /* UIBarButtonItem+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B708D22F9752C00DCBD8C /* UIBarButtonItem+Tool.m */; };
+		0452516022FD29B2000879E7 /* UIViewController+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452515F22FD29B2000879E7 /* UIViewController+Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		042B708C22F9752C00DCBD8C /* UIBarButtonItem+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Tool.h"; sourceTree = "<group>"; };
 		042B708D22F9752C00DCBD8C /* UIBarButtonItem+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Tool.m"; sourceTree = "<group>"; };
 		042B708F22F9763900DCBD8C /* BaseComHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseComHeader.h; sourceTree = "<group>"; };
+		0452515E22FD29B2000879E7 /* UIViewController+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tool.h"; sourceTree = "<group>"; };
+		0452515F22FD29B2000879E7 /* UIViewController+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				042B707922F91CC800DCBD8C /* BaseCom */,
 				042B706322F919E000DCBD8C /* AppDelegate.h */,
 				042B706422F919E000DCBD8C /* AppDelegate.m */,
+				0452515E22FD29B2000879E7 /* UIViewController+Tool.h */,
+				0452515F22FD29B2000879E7 /* UIViewController+Tool.m */,
 				042B706622F919E000DCBD8C /* ViewController.h */,
 				042B706722F919E000DCBD8C /* ViewController.m */,
 				042B706922F919E000DCBD8C /* Main.storyboard */,
@@ -187,6 +192,7 @@
 				042B707F22F970EC00DCBD8C /* UIImage+Tool.m in Sources */,
 				042B706522F919E000DCBD8C /* AppDelegate.m in Sources */,
 				042B707C22F91F8C00DCBD8C /* NSString+Tool.m in Sources */,
+				0452516022FD29B2000879E7 /* UIViewController+Tool.m in Sources */,
 				042B708B22F974AF00DCBD8C /* UIFont+Tool.m in Sources */,
 				042B708E22F9752C00DCBD8C /* UIBarButtonItem+Tool.m in Sources */,
 				042B708522F9738600DCBD8C /* UIColor+Tool.m in Sources */,
@@ -333,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M7K2ZU28X2;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = BaseCom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -350,6 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M7K2ZU28X2;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = BaseCom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

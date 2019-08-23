@@ -2,7 +2,7 @@
 //  UIBarButtonItem+Tool.m
 //  BaseCom
 //
-//  Created by mac on 2019/8/6.
+//  Created by RWN on 2019/8/6.
 //  Copyright © 2019年 RWN. All rights reserved.
 //
 
@@ -71,6 +71,7 @@
     }
     if (direction == RWNBarLeft) {
         barButton.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
+        barButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     }else if (direction == RWNBarRight){
         barButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -20);
     }

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 16进制颜色(html颜色值)字符串转为UIColor
  */
-+(UIColor *) hexStringToColor: (NSString *) stringToConvert;
++(UIColor *)RWNHexStringToColor: (NSString *) stringToConvert;
 
 /**
  *  16进制颜色(html颜色值)字符串转为UIColor
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return UIColor
  */
-+(UIColor *) hexStringToColor: (NSString *) stringToConvert andAlph:(CGFloat)alpha;
++(UIColor *)RWNHexStringToColor: (NSString *) stringToConvert andAlph:(CGFloat)alpha;
 
 
 @end

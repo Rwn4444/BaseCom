@@ -10,7 +10,7 @@
 
 @implementation UIButton (Tool)
 
-- (void)layoutButtonWithEdgeInsetsStyle:(RWNButtonEdgeInsetsStyle)style
+- (void)RWNLayoutButtonWithEdgeInsetsStyle:(RWNButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space
 {
     
